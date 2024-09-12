@@ -3,8 +3,8 @@ document.getElementById('transformarBtn').addEventListener('click', function() {
     const nome = document.getElementById('nome').value;
     const idade = document.getElementById('idade').value;
     const cpf = document.getElementById('cpf').value;
+
     
-   
     if (!mat || !nome || !idade || !cpf) {
         alert('Todos os campos são obrigatórios!');
         return;
