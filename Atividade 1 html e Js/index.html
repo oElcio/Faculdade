@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Aluno</title>
+    <script src="tarefa.js" defer></script>
+</head>
+<body>
+    <h1>Cadastro de Aluno</h1>
+    <form id="alunoForm">
+        <label for="mat">Matrícula:</label>
+        <input type="text" id="mat" name="mat" required><br>
+        
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+        
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" name="idade" required><br>
+        
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required><br>
+        
+        <button type="button" id="transformarBtn">Transformar em JSON</button>
+    </form>
+    
+    <h2>Resultado JSON:</h2>
+    <pre id="jsonOutput"></pre>
+</body>
+</html>
