@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+#palavraDisplay {
+    font-size: 30px;
+    margin: 20px;
+}
+.botaoLetra {
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+#forca {
+    margin-top: 20px;
+    font-size: 50px;
+}
