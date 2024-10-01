@@ -45,4 +45,4 @@ const fetchList = (url) => {
     });
 };
 
-window.onload = () => fetchList(`https://swapi.dev/api/people/?page=1`);
+window.onload = () => fetchList(`https://swapi.dev/api/planets/?page=1`);
