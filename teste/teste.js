@@ -50,3 +50,5 @@ const getTarefas = async () => {
 };
 
 window.onload = getTarefas;
+
+ // correção da atividade 7 ( verificar )
