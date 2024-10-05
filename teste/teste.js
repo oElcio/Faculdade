@@ -27,7 +27,7 @@ const createList = (data) => {
 const getTarefas = async () => {
   try {
     const response = await fetch(
-      "https://parseapi.back4app.com/classes/MyCustomClassName",
+      "https://parseapi.back4app.com/classes/Tarefa",
       {
         method: "GET",
         headers: {

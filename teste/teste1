@@ -99,9 +99,9 @@ const handleBtAdicionarClick = async () => {
   }
   try {
     const response = await fetch(baseURL, {
-      method: "POST",  // Aqui a mudança de GET para POST
+      method: "GET",
       headers: headersJson,
-      body: JSON.stringify({ descricao: descricao, concluida: false }),  // Aqui, adiciona a tarefa com status "não concluída"
+      body: JSON.stringify({ descricao: descricao }),
     });
     console.log(response);
     if (!response.ok) {
