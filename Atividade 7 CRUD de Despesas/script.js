@@ -4,7 +4,7 @@ const inputValor = document.getElementById("inputValor");
 const btAdicionar = document.getElementById("btAdicionar");
 const totalDespesasEl = document.getElementById("totalDespesas");
 
-const baseURL = "https://parseapi.back4app.com/classes/Despesa";
+const baseURL = "https://parseapi.back4app.com/classes/Despesas";
 const headers = {
   "X-Parse-Application-Id": "q95OdCC8RIJY6QAcUYLRfSrej5zCXtzzXQ49IcFO",
   "X-Parse-REST-API-Key": "MVsD7AlZunjfJVe8QMteVCmR5hWyuZgP4kLT7y8S",
@@ -14,7 +14,7 @@ const headersJson = {
   "Content-Type": "application/json",
 };
 
-// Função para criar a lista de despesas
+// Função para criar a lista de despesas (Revisar)
 const createList = (data) => {
   olDespesas.innerHTML = "";
   let totalDespesas = 0;
@@ -25,7 +25,7 @@ const createList = (data) => {
     const li = document.createElement("li");
     li.appendChild(text);
 
-    // Criação do input para alterar o valor da despesa
+    // Criação do input para alterar o valor da despesa (Revisar)
     const inputValorDespesa = document.createElement("input");
     inputValorDespesa.type = "number";
     inputValorDespesa.value = despesa.valor;
@@ -43,15 +43,15 @@ const createList = (data) => {
 
     olDespesas.appendChild(li);
 
-    // Somando o valor da despesa para exibir o total
+    // Somando o valor da despesa para exibir o total (Revisar)
     totalDespesas += despesa.valor;
   });
 
-  // Exibir o somatório de todas as despesas
+  // Exibir o somatório de todas as despesas (Revisar)
   totalDespesasEl.innerText = totalDespesas.toFixed(2);
 };
 
-// Função para adicionar despesa
+// Função para adicionar despesa (Revisar)
 const handleBtAdicionarClick = async () => {
   const descricao = inputDescricao.value.trim();
   const valor = parseFloat(inputValor.value);
@@ -80,7 +80,7 @@ const handleBtAdicionarClick = async () => {
   }
 };
 
-// Função para atualizar o valor da despesa
+// Função para atualizar o valor da despesa (Revisar)
 const handleBtAtualizarClick = async (btAtualizar, despesa, inputValorDespesa) => {
   const novoValor = parseFloat(inputValorDespesa.value);
   if (isNaN(novoValor)) {
@@ -106,7 +106,7 @@ const handleBtAtualizarClick = async (btAtualizar, despesa, inputValorDespesa) =
   }
 };
 
-// Função para remover despesa
+// Função para remover despesa (Revisar)
 const handleBtRemoverClick = async (btRemover, despesa) => {
   try {
     btRemover.disabled = true;
@@ -126,7 +126,7 @@ const handleBtRemoverClick = async (btRemover, despesa) => {
   }
 };
 
-// Função para buscar todas as despesas
+// Função para buscar todas as despesas (Revisar)
 const getDespesas = async () => {
   try {
     const response = await fetch(baseURL, {
