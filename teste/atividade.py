@@ -57,14 +57,51 @@ J = np.array([[2, 3, 5],
 Subitração2 = J - I
 print("I - J =\n", Subitração2)
 
+#Exemplo 6 Subitração de matriz(2x2)
+G = np.array([[6, 8], 
+              [4, 7]])
 
-#Exemplo Soma de matriz(2x3) e matriz(3x2)
-AA = np.array([[1, 2, 3], 
-              [4, 5, 6]])
+H = np.array([[3, 2], 
+              [5, 1]])
 
-BB = np.array([[1, 2], 
-              [3, 4], 
+Subitração3 = G - H
+print("G - H =\n", Subitração3)
+
+# Multiplicação de matrizes (2x2)
+M = np.array([[1, 2],
+              [3, 4]])
+
+N = np.array([[2, 0],
+              [1, 3]])
+
+resultadoMN = np.dot(M, N)
+print(resultadoMN)
+
+# Multiplicação de matrizes (2x3) e (3x2)
+O = np.array([[2, 3, 1],
+              [4, 0, 5]])
+
+P = np.array([[1, 2],
+              [3, 4],
               [5, 6]])
 
-produto = np.dot(G, H)
-print("AA * BB =\n", produto)
+resultadoOP = np.dot(O,P)
+print("O x P=\n", resultadoOP)
+
+# Multiplicação por escalar (3x3)
+Q = np.array([[1, 2, 3],
+              [4, 5, 6],
+              [7, 8, 9]])
+
+k1 = 3
+resultadoQ = Q * k1
+print("Multiplicação de Q pelo escalar k\n", resultadoQ)
+
+# Multiplicação por escalar (2x2)
+R = np.array([[2, 1],
+              [0, 3]])
+
+k2 = 4
+# Resultado da multiplicação da matriz j pelo escalar k
+resultadoR = R * k2
+print("Multiplicação de R pelo escalar k\n", resultadoR)
